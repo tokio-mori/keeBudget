@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">keeBudget</string>
+    <string name="title_create">Create</string>
+    <string name="title_dashboard">Confirm</string>
+    <string name="title_notifications">Calc</string>
+    <string name="title_note">Note</string>
+</resources>
