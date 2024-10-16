@@ -1,14 +1,14 @@
-package com.example.householdbudgetapp.ui.home;
+package com.example.householdbudgetapp.ui.create;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class CreateViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public CreateViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is home fragment");
     }
