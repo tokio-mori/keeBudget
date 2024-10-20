@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -18,8 +19,10 @@ import com.example.householdbudgetapp.databinding.FragmentCreateBinding;
 
 public class CreateFragment extends Fragment {
 
+    private EditText moeny;
+    private EditText newCategory;
     private Spinner spinner;
-    private EditText editText;
+    private Button button;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -27,8 +30,11 @@ public class CreateFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_create, container, false);
 
-        editText = view.findViewById(R.id.create_money);
+        moeny = view.findViewById(R.id.create_money);
+        newCategory = view.findViewById(R.id.create_new_category);
         spinner = view.findViewById(R.id.create_category);
+        button = view.findViewById(R.id.create_button);
+
 
         setupSpinner();
 
@@ -46,6 +52,17 @@ public class CreateFragment extends Fragment {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spinner.setAdapter(adapter);
+    }
+
+    private void submitButton() {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String selectedCategory = spinner.getSelectedItem().toString();
+
+                String amount = moeny.getText().toString();
+            }
+        });
     }
 
 

@@ -4,4 +4,5 @@
     <string name="title_dashboard">Confirm</string>
     <string name="title_notifications">Calc</string>
     <string name="title_note">Note</string>
+    <string name="button_save">SAVE</string>
 </resources>

@@ -6,41 +6,119 @@
     android:layout_height="match_parent"
     tools:context=".ui.create.CreateFragment">
 
-    <EditText
-        android:id="@+id/create_money"
-        android:layout_width="306dp"
-        android:layout_height="68dp"
-        android:ems="10"
-        android:gravity="end"
-        android:inputType="number"
+    <TextView
+        android:id="@+id/create_text_money"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:text="Money"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.116" />
+        app:layout_constraintVertical_bias="0.009" />
+
+    <EditText
+        android:id="@+id/create_money"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:fontFamily="@font/murechoregular"
+        android:gravity="end"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/create_text_category"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:text="Category"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <EditText
+        android:id="@+id/create_new_category"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:fontFamily="@font/mplus1p_regular"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        android:hint="New..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
 
     <Spinner
         android:id="@+id/create_category"
-        android:layout_width="305dp"
+        android:layout_width="380dp"
         android:layout_height="55dp"
+        android:background="@drawable/edit_text"
+        android:fontFamily="@font/mplus1p_regular"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255" />
+        app:layout_constraintVertical_bias="0.321" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="307dp"
-        android:layout_height="74dp"
+        android:id="@+id/create_note"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:background="@drawable/edit_text"
         android:ems="10"
+        android:fontFamily="@font/mplus1p_regular"
         android:inputType="textMultiLine"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.576" />
+
+    <TextView
+        android:id="@+id/create_text_note"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:text="Remarks"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462" />
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="380dp"
+        android:layout_height="68dp"
+        android:text="@string/button_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
